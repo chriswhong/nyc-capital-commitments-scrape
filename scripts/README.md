@@ -13,7 +13,7 @@ There seems to be an anomaly on the last page of the FY19a pdf where the 3-digit
 
 
 ## scrape full fy directory into single json
-node scrape `../data/fy08`
+node scrape `../data/fy08/txt`
 
 Import to DB
 `mongoimport --uri {MONGO_URI} --jsonArray --collection multiyear --file ../data/fy08/fy08.json`

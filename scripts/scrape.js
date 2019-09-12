@@ -116,7 +116,8 @@ const parseLine = (line, budgetLine) => {
         }
       ]
     }
-  } else if (/^\s*\(N\)*/.test(line) && budgetLine.projects.length > 0) {
+  } else if (/^\s*\(N\)/.test(line) && budgetLine.adoptedAppropriations) {
+    console.log('HEREHERE', line)
     const [,
       adoptedFY0NonCity,
       adoptedFY1NonCity,
